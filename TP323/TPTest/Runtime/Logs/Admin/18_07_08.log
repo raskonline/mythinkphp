@@ -1,0 +1,51 @@
+[ 2018-07-08T21:35:03+08:00 ] ::1 /mythinkphp/TP323/shop/index.php/admin/admin/index
+ERR: 无法加载控制器:Admin
+
+[ 2018-07-08T21:35:28+08:00 ] ::1 /mythinkphp/TP323/shop/index.php/admin/index/css/datepicker3.css
+ERR: 非法操作:css
+
+[ 2018-07-08T21:35:28+08:00 ] ::1 /mythinkphp/TP323/shop/index.php/admin/index/css/styles.css
+ERR: 非法操作:css
+
+[ 2018-07-08T21:35:29+08:00 ] ::1 /mythinkphp/TP323/shop/index.php/admin/index/css/bootstrap.min.css
+ERR: 非法操作:css
+
+[ 2018-07-08T21:35:29+08:00 ] ::1 /mythinkphp/TP323/shop/index.php/admin/index/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2018-07-08T21:35:29+08:00 ] ::1 /mythinkphp/TP323/shop/index.php/admin/index/js/jquery-1.11.1.min.js
+ERR: 非法操作:js
+
+[ 2018-07-08T21:35:29+08:00 ] ::1 /mythinkphp/TP323/shop/index.php/admin/index/js/chart.min.js
+ERR: 非法操作:js
+
+[ 2018-07-08T21:35:30+08:00 ] ::1 /mythinkphp/TP323/shop/index.php/admin/index/js/chart-data.js
+ERR: 非法操作:js
+
+[ 2018-07-08T21:35:30+08:00 ] ::1 /mythinkphp/TP323/shop/index.php/admin/index/js/easypiechart.js
+ERR: 非法操作:js
+
+[ 2018-07-08T21:35:30+08:00 ] ::1 /mythinkphp/TP323/shop/index.php/admin/index/js/easypiechart-data.js
+ERR: 非法操作:js
+
+[ 2018-07-08T21:35:30+08:00 ] ::1 /mythinkphp/TP323/shop/index.php/admin/index/js/bootstrap-datepicker.js
+ERR: 非法操作:js
+
+[ 2018-07-08T21:35:30+08:00 ] ::1 /mythinkphp/TP323/shop/index.php/admin/index/js/bootstrap.min.js
+ERR: 非法操作:js
+
+[ 2018-07-08T21:35:31+08:00 ] ::1 /mythinkphp/TP323/shop/index.php/admin/index/js/chart.min.js
+ERR: 非法操作:js
+
+[ 2018-07-08T21:35:31+08:00 ] ::1 /mythinkphp/TP323/shop/index.php/admin/index/js/chart-data.js
+ERR: 非法操作:js
+
+[ 2018-07-08T21:35:32+08:00 ] ::1 /mythinkphp/TP323/shop/index.php/admin/index/js/easypiechart.js
+ERR: 非法操作:js
+
+[ 2018-07-08T21:35:32+08:00 ] ::1 /mythinkphp/TP323/shop/index.php/admin/index/js/easypiechart-data.js
+ERR: 非法操作:js
+
+[ 2018-07-08T21:35:33+08:00 ] ::1 /mythinkphp/TP323/shop/index.php/admin/index/js/bootstrap-datepicker.js
+ERR: 非法操作:js
+
