@@ -4,6 +4,9 @@
 //开发模式
 define("APP_DEBUG",true);
 
+//生产模式
+//define("APP_DEBUG",false);
+
 
 //定义前台静态常量
 define("HOME_CSS_URL","/mythinkphp/TP323/TPMyShop/Home/Public/css/");

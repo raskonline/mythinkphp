@@ -9,6 +9,7 @@
 namespace Admin\Controller;
 
 
+use Model\GoodsModel;
 use Think\Controller;
 
 class GoodsController extends Controller
@@ -16,6 +17,9 @@ class GoodsController extends Controller
     /**展示商品列表*/
     public function listgoods()
     {
+        $list=new GoodsModel();
+        dump($list);
+        die();
         $this->display();
     }
 

@@ -12,6 +12,7 @@
         
     </head>
     <body class="index_body">
+    {literal}123{/literal}
         <div class="block clearfix" style="position: relative; height: 98px;">
             <a href="#" name="top"><img class="logo" src="<?php echo HOME_IMG_URL;?>logo.gif"></a>
 
