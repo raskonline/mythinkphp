@@ -17,6 +17,9 @@ class GoodsController extends Controller
     /**展示商品列表*/
     public function listgoods()
     {
+        $goodsModel=new GoodsModel();
+        $goods=$goodsModel->select();
+        $this->assign('goods',$goods);
         $this->display();
     }
 
