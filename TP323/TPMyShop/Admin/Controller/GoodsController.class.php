@@ -17,9 +17,6 @@ class GoodsController extends Controller
     /**展示商品列表*/
     public function listgoods()
     {
-        $list=new GoodsModel();
-        dump($list);
-        die();
         $this->display();
     }
 
