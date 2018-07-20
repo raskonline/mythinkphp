@@ -13,6 +13,8 @@ use Think\Model;
 
 class UserModel extends Model
 {
+    protected $patchValidate = true;
+
     protected $_validate = array(
         array('username', 'require', '用户名不允许重复！', 0, 'unique', 1),
         array('password', 'require', '密码不允许为空！'),
@@ -24,5 +26,5 @@ class UserModel extends Model
         array('user_tel', '/^1[3|4|5|8|9][0-9]\d{8}$/', '手机号格式不正确！', 0, 'regex', 1)
     );  // 自动验证定义
 
-    protected $patchValidate = true;
+
 }
