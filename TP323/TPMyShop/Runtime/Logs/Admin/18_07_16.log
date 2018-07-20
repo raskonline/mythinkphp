@@ -1,0 +1,24 @@
+[ 2018-07-16T18:36:59+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/Admin/Goods/listgoods
+ERR: SQLSTATE[HY000] [1049] Unknown database 'shop'
+
+[ 2018-07-16T19:08:14+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/Admin/Goods/listgoods
+ERR: Call to a member function where() on array
+
+[ 2018-07-16T19:08:17+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/Admin/Goods/listgoods
+ERR: Call to a member function where() on array
+
+[ 2018-07-16T19:09:44+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/Admin/Goods/listgoods
+ERR: Call to a member function limit() on array
+
+[ 2018-07-16T19:10:13+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/Admin/Goods/listgoods
+ERR: Call to a member function limit() on array
+
+[ 2018-07-16T19:10:14+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/Admin/Goods/listgoods
+ERR: Call to a member function limit() on array
+
+[ 2018-07-16T19:10:19+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/Admin/Goods/listgoods
+ERR: Call to a member function limit() on array
+
+[ 2018-07-16T19:10:54+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/Admin/Goods/listgoods
+ERR: Call to a member function limit() on array
+

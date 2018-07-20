@@ -18,6 +18,8 @@ class GoodsController extends Controller
     public function listgoods()
     {
         $goodsModel=new GoodsModel();
+        $goodsModel->where("goods_price > 1000");
+        $goodsModel->limit(10);
         $goods=$goodsModel->select();
         $this->assign('goods',$goods);
         $this->display();
