@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2018-07-16 18:39:55
+<?php /* Smarty version Smarty-3.1.6, created on 2018-07-21 19:56:21
          compiled from "D:/wamp64/www/mythinkphp/TP323/TPMyShop/Admin/View\Goods\listgoods.html" */ ?>
 <?php /*%%SmartyHeaderCode:42125b4c75fb423522-83532266%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9344c38b0e97957c6193da4ce14a6c117e7cf998' => 
     array (
       0 => 'D:/wamp64/www/mythinkphp/TP323/TPMyShop/Admin/View\\Goods\\listgoods.html',
-      1 => 1531737360,
+      1 => 1532012409,
       2 => 'file',
     ),
   ),
@@ -15,14 +15,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_5b4c75fbbe3cf',
   'variables' => 
   array (
     'goods' => 0,
     'v' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_5b4c75fbbe3cf',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5b4c75fbbe3cf')) {function content_5b4c75fbbe3cf($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include 'D:\\wamp64\\www\\mythinkphp\\TP323\\ThinkPHP\\Library\\Vendor\\Smarty\\plugins\\modifier.date_format.php';
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -102,11 +102,13 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
 20121018-174034-97960.jpg" height="40" width="40"></td>
             <td><?php echo $_smarty_tpl->tpl_vars['v']->value['goods_brand_id'];?>
 </td>
-            <td><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['v']->value['goods_create_time'],"%Y-%m-%d %H:%I:%S");?>
+            <td><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['v']->value['goods_create_time'],"%Y-%m-%d %H:%M:%S");?>
 </td>
             <td><a href="<?php echo @__CONTROLLER__;?>
-/modifygoods">修改</a></td>
-            <td><a href="javascript:;" onclick="delete_product(1)">删除</a></td>
+/modifygoods/goods_id/<?php echo $_smarty_tpl->tpl_vars['v']->value['goods_id'];?>
+">修改</a></td>
+            <td><a href="javascript:delete_product(<?php echo $_smarty_tpl->tpl_vars['v']->value['goods_id'];?>
+)">删除</a></td>
         </tr>
         <?php } ?>
 
@@ -120,4 +122,14 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
     </table>
 </div>
 </body>
-</html><?php }} ?>
+</html>
+<script type="text/javascript">
+    function delete_product(id) {
+        result = confirm("确定要删除该商品吗？");
+        if (result) {
+            window.location.href="http://<?php echo $_SERVER['HTTP_HOST'];?>
+<?php echo @__CONTROLLER__;?>
+/delgoods/goods_id/"+id;
+        }
+    }
+</script><?php }} ?>

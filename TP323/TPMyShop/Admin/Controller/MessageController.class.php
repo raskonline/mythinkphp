@@ -12,7 +12,7 @@ namespace Admin\Controller;
 use Model\MessageModel;
 use Think\Controller;
 
-class MessageController extends Controller
+class MessageController extends BaseController
 {
     public function listmessage(){
         $list=new MessageModel();
