@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2018-07-16 18:36:53
+<?php /* Smarty version Smarty-3.1.6, created on 2018-07-21 14:54:36
          compiled from "D:/wamp64/www/mythinkphp/TP323/TPMyShop/Admin/View\Index\right.html" */ ?>
 <?php /*%%SmartyHeaderCode:7805b4c754500f565-29969133%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '47e6df1ad04075d49ccd76aea58bcd7d861e738d' => 
     array (
       0 => 'D:/wamp64/www/mythinkphp/TP323/TPMyShop/Admin/View\\Index\\right.html',
-      1 => 1531737360,
+      1 => 1532156046,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.6',
   'unifunc' => 'content_5b4c75454f169',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5b4c75454f169')) {function content_5b4c75454f169($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
@@ -48,7 +48,8 @@ admin_p.gif"
                         <tr>
                             <td>当前时间：2008-12-27 17:03:55</td></tr>
                         <tr>
-                            <td style="font-weight: bold; font-size: 16px">admin</td></tr>
+                            <td style="font-weight: bold; font-size: 16px"><?php echo $_SESSION['mg_name'];?>
+</td></tr>
                         <tr>
                             <td>欢迎进入网站管理中心！</td></tr></table></td></tr>
             <tr>
@@ -67,7 +68,8 @@ title_bg2.jpg>您的相关信息</td></tr>
         <table cellspacing=0 cellpadding=2 width="95%" align=center border=0>
             <tr>
                 <td align=right width=100>登陆帐号：</td>
-                <td style="color: #880000">admin</td></tr>
+                <td style="color: #880000"><?php echo $_SESSION['mg_name'];?>
+</td></tr>
             <tr>
                 <td align=right>真实姓名：</td>
                 <td style="color: #880000">admin</td></tr>
