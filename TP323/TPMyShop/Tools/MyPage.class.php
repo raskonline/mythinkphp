@@ -78,7 +78,7 @@ class MyPage
         if($this->pageIndex==1)
             $html.='';
         else
-            $html.="&nbsp;&nbsp;<a href='{$this->uri}&pageIndex=".($this->page-1)."'>{$this->config["prev"]}</a>&nbsp;&nbsp;";
+            $html.="&nbsp;&nbsp;<a href='{$this->uri}&pageIndex=".($this->pageIndex-1)."'>{$this->config["prev"]}</a>&nbsp;&nbsp;";
 
         return $html;
     }
