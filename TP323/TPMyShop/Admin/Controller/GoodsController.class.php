@@ -12,6 +12,7 @@ namespace Admin\Controller;
 use Model\GoodsModel;
 use Think\Image;
 use Think\Upload;
+use Tools\MyPage;
 
 
 class GoodsController extends BaseController
@@ -20,18 +21,15 @@ class GoodsController extends BaseController
     public function listgoods()
     {
         $goodsModel = new GoodsModel();
-        //执行原生的SQL语句
-        //$sql="select * from sw_goods";
-        //$goods=$goodsModel->query($sql);//增删改使用execute
-        //是M方法创建模型，调用Model中的方法
-        //$m= M('goods');
-        //$goods=$m->select();
-        //var_dump($goods);
-        //$goodsModel->where("goods_price > 1000");
-        //$goodsModel->field("goods_id,goods_price");//投影查询
-        //$goodsModel->order("goods_price desc");
-        $goods = $goodsModel->order("goods_id desc")->select();
-        $this->assign('goods', $goods);
+
+        $pageSize=10;//页面大小
+        $totalCount=$goodsModel->count();//总记录数
+        $myPage=new MyPage($totalCount,$pageSize);//实例化分页类
+        $pagination=$myPage->fpage();//生成分页控制面板
+        $sql="SELECT * FROM sw_goods ORDER BY goods_id DESC ".$myPage->limit;//原生SQL分页
+        $pageGoods=$goodsModel->query($sql);//获得分页数据
+        $this->assign('pageGoods', $pageGoods);
+        $this->assign('pagination', $pagination);
         $this->display();
     }
 

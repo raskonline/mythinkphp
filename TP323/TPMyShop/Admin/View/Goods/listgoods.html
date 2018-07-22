@@ -48,7 +48,7 @@
             <td align="center" colspan="2">操作</td>
         </tr>
         <!--表头部分-->
-        {foreach $goods as $k=>$v}
+        {foreach $pageGoods as $k=>$v}
         <tr id="product{$v@iteration}">
             <td>{$v.goods_id}</td>
             <td><a href="#">{$v.goods_name}</a></td>
@@ -66,7 +66,7 @@
         <!--表尾部分-->
         <tr>
             <td colspan="20" style="text-align: center;">
-                [1]
+                {$pagination}
             </td>
         </tr>
         </tbody>

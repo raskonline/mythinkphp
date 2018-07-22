@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2018-07-22 10:20:11
+<?php /* Smarty version Smarty-3.1.6, created on 2018-07-22 11:22:41
          compiled from "D:/wamp64/www/mythinkphp/TP323/TPMyShop/Admin/View\Goods\listgoods.html" */ ?>
 <?php /*%%SmartyHeaderCode:42125b4c75fb423522-83532266%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9344c38b0e97957c6193da4ce14a6c117e7cf998' => 
     array (
       0 => 'D:/wamp64/www/mythinkphp/TP323/TPMyShop/Admin/View\\Goods\\listgoods.html',
-      1 => 1532226006,
+      1 => 1532229747,
       2 => 'file',
     ),
   ),
@@ -19,8 +19,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_5b4c75fbbe3cf',
   'variables' => 
   array (
-    'goods' => 0,
+    'pageGoods' => 0,
     'v' => 0,
+    'pagination' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -79,7 +80,7 @@ mine.css" type="text/css" rel="stylesheet"/>
         <!--表头部分-->
         <?php  $_smarty_tpl->tpl_vars['v'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['v']->_loop = false;
  $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['goods']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_from = $_smarty_tpl->tpl_vars['pageGoods']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
  $_smarty_tpl->tpl_vars['v']->iteration=0;
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->key => $_smarty_tpl->tpl_vars['v']->value){
 $_smarty_tpl->tpl_vars['v']->_loop = true;
@@ -117,7 +118,8 @@ $_smarty_tpl->tpl_vars['v']->_loop = true;
         <!--表尾部分-->
         <tr>
             <td colspan="20" style="text-align: center;">
-                [1]
+                <?php echo $_smarty_tpl->tpl_vars['pagination']->value;?>
+
             </td>
         </tr>
         </tbody>
