@@ -10,6 +10,8 @@ namespace Admin\Controller;
 
 
 use Model\GoodsModel;
+use Think\Image;
+use Think\Upload;
 
 
 class GoodsController extends BaseController
@@ -37,14 +39,37 @@ class GoodsController extends BaseController
     public function addgoods()
     {
         $goodsModel = new GoodsModel();
-
         if (!empty($_POST)) {
+            //图片处理
+            if ($_FILES['goods_img']['error'] == 0) {//上传成功
+                $config = [
+                    'rootPath' => 'Public/Uploads/', //保存根路径
+                ];
+                $uploads = new Upload($config);
+                $flag = $uploads->uploadOne($_FILES['goods_img']);//上传单张图片
+                //拼接图片路径
+                $filePath = $uploads->rootPath . $flag['savepath'] . $flag['savename'];
+                //大图片地址写入POST数组，待写入数据库
+                $_POST['goods_big_img'] = $filePath;
+
+                //制作缩略图
+                $image=new Image();
+                $image->open($filePath);
+                $image->thumb(100,100/$image->width()*$image->height());//等比例缩放
+                $smallImageFilePath=$uploads->rootPath . $flag['savepath'] .'s_'. $flag['savename'];//名字和大图类似，加前缀“s_”
+                $image->save($smallImageFilePath);
+                //小图片地址写入POST数组，待写入数据库
+                $_POST['goods_small_img'] = $smallImageFilePath;
+            }
+
             $result = $goodsModel->add($_POST);
             if ($result) {
                 $this->redirect("listgoods", array(), 2, "<h1>:)</h1>添加数据成功！");
             } else {
                 $this->redirect("addgoods", array(), 2, "<h1>:(</h1>添加数据失败！");
             }
+
+
         } else {
             $this->display();
         }

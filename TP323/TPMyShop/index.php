@@ -17,5 +17,8 @@ define("HOME_JS_URL","/mythinkphp/TP323/TPMyShop/Home/Public/js/");
 define("ADMIN_CSS_URL","/mythinkphp/TP323/TPMyShop/Admin/Public/css/");
 define("ADMIN_IMG_URL","/mythinkphp/TP323/TPMyShop/Admin/Public/img/");
 
+//定义当前url
+define("SITE_URL","http://".$_SERVER['HTTP_HOST']."/mythinkphp/TP323/TPMyShop/");
+
 //引入框架
 include_once "../ThinkPHP/ThinkPHP.php";

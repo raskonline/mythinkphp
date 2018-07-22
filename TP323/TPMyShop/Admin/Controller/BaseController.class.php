@@ -19,7 +19,7 @@ class BaseController extends Controller
 
         if (!isset($_SESSION['mg_name']) )
         {
-            $this->redirect("admin/manager/login", array(), 2, "请登录！");
+            //$this->redirect("admin/manager/login", array(), 2, "请登录！");
 
         }
     }
