@@ -33,8 +33,6 @@ class ManagerController extends Controller
                 }else{
                     $this->redirect("admin/manager/login", array(), 2, "账号或者密码错误");
                 }
-
-
             } else {//验证失败
                 $this->redirect("admin/manager/login", array(), 2, "验证码错误");
             }
@@ -45,8 +43,7 @@ class ManagerController extends Controller
 
     public function logout(){
         session(null);
-        $this->display("login");
-        //$this->redirect("login", array(), 2, "注销登陆成功，即将返回登陆页面！");//frameset无效
+        $this->redirect("login", array(), 2, "注销登陆成功，即将返回登陆页面！");
     }
 
 
