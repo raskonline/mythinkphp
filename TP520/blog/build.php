@@ -9,36 +9,17 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-use think\Route;
-
-//手动修改路由
-//Route::rule('news/:id','index/news/read');
-//Route::rule('blog/:name','index/news/blog');
-Route::get([
-    'news/:id'=>'index/news/read',
-    'blog/:name'=>'index/news/blog',
-]);
-//路由参数正则验证
-Route::pattern([
-    'id'=>'\d+',
-    'name'=>'\w+'
-]);
-
-
-Route::get(
-    'hello/:name',function($name){
-        return 'hi '.$name;
-    }
-);
-
-
 return [
-    '__pattern__' => [
-        'name' => '\w+',
-    ],
-    '[hello]' => [
-        ':id' => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
-        ':name' => ['index/hello', ['method' => 'post']],
-    ],
+    // 生成应用公共文件
+    '__file__' => ['common.php', 'config.php', 'database.php'],
 
+    // 定义demo模块的自动生成 （按照实际定义的文件名生成）
+    'demo'     => [
+        '__file__'   => ['common.php'],
+        '__dir__'    => ['behavior', 'controller', 'model', 'view'],
+        'controller' => ['Index', 'Test', 'UserType'],
+        'model'      => ['User', 'UserType'],
+        'view'       => ['index/index'],
+    ],
+    // 其他更多的模块定义
 ];

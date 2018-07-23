@@ -9,36 +9,20 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-use think\Route;
-
-//手动修改路由
-//Route::rule('news/:id','index/news/read');
-//Route::rule('blog/:name','index/news/blog');
-Route::get([
-    'news/:id'=>'index/news/read',
-    'blog/:name'=>'index/news/blog',
-]);
-//路由参数正则验证
-Route::pattern([
-    'id'=>'\d+',
-    'name'=>'\w+'
-]);
-
-
-Route::get(
-    'hello/:name',function($name){
-        return 'hi '.$name;
-    }
-);
-
-
+// 应用行为扩展定义文件
 return [
-    '__pattern__' => [
-        'name' => '\w+',
-    ],
-    '[hello]' => [
-        ':id' => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
-        ':name' => ['index/hello', ['method' => 'post']],
-    ],
-
+    // 应用初始化
+    'app_init'     => [],
+    // 应用开始
+    'app_begin'    => [],
+    // 模块初始化
+    'module_init'  => [],
+    // 操作开始执行
+    'action_begin' => [],
+    // 视图内容过滤
+    'view_filter'  => [],
+    // 日志写入
+    'log_write'    => [],
+    // 应用结束
+    'app_end'      => [],
 ];
