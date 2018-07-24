@@ -62,20 +62,20 @@
                                             <label for="username"
                                                    class="col-sm-2 control-label no-padding-right">管理员名称</label>
                                             <div class="col-sm-6">
-                                                <input class="form-control" id="username" placeholder="" name="username"
+                                                <input class="form-control" id="username" placeholder="" name="name"
                                                        required="" type="text">
                                             </div>
-                                            <p class="help-block col-sm-4 red">* 必填</p>
+                                            <p class="help-block col-sm-4 red">{$err.name|default='* 必填'}</p>
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="group_id"
+                                            <label for="password"
                                                    class="col-sm-2 control-label no-padding-right">管理员密码</label>
                                             <div class="col-sm-6">
-                                                <input class="form-control" id="password" placeholder="" name="password"
+                                                <input class="form-control" id="password" placeholder="" name="pwd"
                                                        required="" type="text">
                                             </div>
-                                            <p class="help-block col-sm-4 red">* 必填</p>
+                                            <p class="help-block col-sm-4 red">{$err.pwd|default='* 必填'}</p>
                                         </div>
                                         <div class="form-group">
                                             <div class="col-sm-offset-2 col-sm-10">
