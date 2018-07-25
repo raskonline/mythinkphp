@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:85:"D:\wamp64\www\mythinkphp\TP520\blog\public/../application/admin\view\index\index.html";i:1532356674;s:74:"D:\wamp64\www\mythinkphp\TP520\blog\application\admin\view\common\top.html";i:1532356620;s:75:"D:\wamp64\www\mythinkphp\TP520\blog\application\admin\view\common\left.html";i:1532360516;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:85:"D:\wamp64\www\mythinkphp\TP520\blog\public/../application/admin\view\index\index.html";i:1532356674;s:74:"D:\wamp64\www\mythinkphp\TP520\blog\application\admin\view\common\top.html";i:1532356620;s:75:"D:\wamp64\www\mythinkphp\TP520\blog\application\admin\view\common\left.html";i:1532526501;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -104,9 +104,9 @@
             </a>
             <ul class="submenu">
                 <li>
-                    <a href="<?php echo url('/admin/admin/list'); ?>">
+                    <a href="<?php echo url('admin/admin/list'); ?>">
                                     <span class="menu-text">
-                                        管理列表                                    </span>
+                                        管理员列表                                    </span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
@@ -116,14 +116,14 @@
         <li>
             <a href="#" class="menu-dropdown">
                 <i class="menu-icon fa fa-file-text"></i>
-                <span class="menu-text">文档</span>
+                <span class="menu-text">分类管理</span>
                 <i class="menu-expand"></i>
             </a>
             <ul class="submenu">
                 <li>
-                    <a href="/admin/document/index.html">
+                    <a href="<?php echo url('admin/catalog/list'); ?>">
                                     <span class="menu-text">
-                                        文章列表                                    </span>
+                                        分类列表                                    </span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>
@@ -133,14 +133,14 @@
         <li>
             <a href="#" class="menu-dropdown">
                 <i class="menu-icon fa fa-gear"></i>
-                <span class="menu-text">系统</span>
+                <span class="menu-text">文章管理</span>
                 <i class="menu-expand"></i>
             </a>
             <ul class="submenu">
                 <li>
-                    <a href="/admin/document/index.html">
+                    <a href="<?php echo url('admin/article/list'); ?>">
                                     <span class="menu-text">
-                                        配置                                   </span>
+                                     文章列表                                          </span>
                         <i class="menu-expand"></i>
                     </a>
                 </li>

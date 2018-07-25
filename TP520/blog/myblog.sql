@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS bg_article(
   summary CHAR(255) COMMENT '摘要',
   keywords CHAR(255) COMMENT '关键字',
   content TEXT NOT NULL COMMENT '内容',
-  photo CHAR(50) COMMENT '图片',
+  photo CHAR(100) COMMENT '图片',
   click INT(6) COMMENT '点击量',
   state SMALLINT COMMENT '是否推荐：1推荐，0不推荐',
   ptime INT COMMENT '发布时间',

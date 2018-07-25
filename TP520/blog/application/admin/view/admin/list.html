@@ -36,7 +36,7 @@
             <div class="page-breadcrumbs">
                 <ul class="breadcrumb">
                     <li>
-                        <a href="#">系统</a>
+                        <a href="{:url('admin/index/index')}">系统</a>
                     </li>
                     <li class="active">管理员管理</li>
                 </ul>
@@ -73,10 +73,18 @@
                                                    class="btn btn-primary btn-sm shiny">
                                                     <i class="fa fa-edit"></i> 编辑
                                                 </a>
-                                                <a href="#" onClick="warning('确实要删除吗', '/admin/user/del/id/6.html')"
+
+                                                {if condition="$user.id neq 1"}
+                                                <a href="#" onClick="warning('确实要删除吗', '{:url(\'admin/admin/del\',[\'id\'=>$user.id])}')"
                                                    class="btn btn-danger btn-sm shiny">
                                                     <i class="fa fa-trash-o"></i> 删除
                                                 </a>
+                                                {else /}
+                                                <a href="#" class="btn btn-default btn-sm shiny"  onClick="warning('禁止删除超级管理员','')">
+                                                    <i class="fa fa-trash-o"></i> 超级管理员
+                                                </a>
+                                                {/if}
+
                                             </td>
                                         </tr>
                                         {/volist}
