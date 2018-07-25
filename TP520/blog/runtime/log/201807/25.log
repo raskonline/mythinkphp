@@ -1,0 +1,736 @@
+---------------------------------------------------------------
+[ 2018-07-25T00:00:10+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/index.php/admin/admin/list.html
+[ info ] localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/list.html [运行时间：0.303017s][吞吐率：3.30req/s] [内存消耗：3,792.20kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->list[ D:\wamp64\www\mythinkphp\TP520\blog\application\admin\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\mythinkphp\TP520\blog\public/../application/admin\view\admin\list.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=myblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_user` LIMIT 0,5 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T00:00:11+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.464027s][吞吐率：2.16req/s] [内存消耗：1,762.60kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T00:00:12+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/index.php/admin/admin/edit/id/1.html
+[ info ] localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/edit/id/1.html [运行时间：0.266015s][吞吐率：3.76req/s] [内存消耗：2,281.93kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Admin->edit[ D:\wamp64\www\mythinkphp\TP520\blog\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] D:\wamp64\www\mythinkphp\TP520\blog\public/../application/admin\view\admin\edit.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T00:00:13+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.478027s][吞吐率：2.09req/s] [内存消耗：1,762.60kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T00:00:18+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/index.php/admin/admin/list.html
+[ info ] localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/list.html [运行时间：0.321018s][吞吐率：3.12req/s] [内存消耗：3,792.45kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/edit/id/1.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->list[ D:\wamp64\www\mythinkphp\TP520\blog\application\admin\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\mythinkphp\TP520\blog\public/../application/admin\view\admin\list.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=myblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_user` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_user` LIMIT 0,5 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T00:00:19+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.458027s][吞吐率：2.18req/s] [内存消耗：1,762.60kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T00:00:22+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/index.php/admin/admin/edit/id/2.html
+[ info ] localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/edit/id/2.html [运行时间：0.261014s][吞吐率：3.83req/s] [内存消耗：2,281.93kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Admin->edit[ D:\wamp64\www\mythinkphp\TP520\blog\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] D:\wamp64\www\mythinkphp\TP520\blog\public/../application/admin\view\admin\edit.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T00:00:23+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.442026s][吞吐率：2.26req/s] [内存消耗：1,762.60kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T00:01:03+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/index.php/admin/admin/list.html
+[ info ] localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/list.html [运行时间：0.321018s][吞吐率：3.12req/s] [内存消耗：3,792.57kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/edit/id/2.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->list[ D:\wamp64\www\mythinkphp\TP520\blog\application\admin\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\mythinkphp\TP520\blog\public/../application/admin\view\admin\list.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=myblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_user` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_user` LIMIT 0,5 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-07-25T00:01:04+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.451026s][吞吐率：2.22req/s] [内存消耗：1,762.60kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T00:01:05+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/index.php/admin/admin/edit/id/1.html
+[ info ] localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/edit/id/1.html [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：2,031.80kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Admin->edit[ D:\wamp64\www\mythinkphp\TP520\blog\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T00:01:30+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.447026s][吞吐率：2.24req/s] [内存消耗：1,762.60kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T00:01:32+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/index.php/admin/admin/list.html
+[ info ] localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/list.html [运行时间：0.287017s][吞吐率：3.48req/s] [内存消耗：3,792.57kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->list[ D:\wamp64\www\mythinkphp\TP520\blog\application\admin\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\mythinkphp\TP520\blog\public/../application/admin\view\admin\list.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=myblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_user` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_user` LIMIT 0,5 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T00:01:33+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.468026s][吞吐率：2.14req/s] [内存消耗：1,762.60kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T00:01:34+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/index.php/admin/admin/edit/id/1.html
+[ info ] localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/edit/id/1.html [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：2,031.80kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Admin->edit[ D:\wamp64\www\mythinkphp\TP520\blog\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T00:01:36+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.444025s][吞吐率：2.25req/s] [内存消耗：1,762.60kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T00:01:37+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/index.php/admin/admin/edit/id/4.html
+[ info ] localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/edit/id/4.html [运行时间：0.046003s][吞吐率：21.74req/s] [内存消耗：2,031.80kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ RUN ] app\admin\controller\Admin->edit[ D:\wamp64\www\mythinkphp\TP520\blog\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T00:07:25+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.456026s][吞吐率：2.19req/s] [内存消耗：1,762.60kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T00:07:27+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/index.php/admin/admin/edit/id/1.html
+[ info ] localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/edit/id/1.html [运行时间：0.312018s][吞吐率：3.20req/s] [内存消耗：3,524.30kb] [文件加载：51]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Admin->edit[ D:\wamp64\www\mythinkphp\TP520\blog\application\admin\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\mythinkphp\TP520\blog\public/../application/admin\view\admin\edit.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=myblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004001s ]
+---------------------------------------------------------------
+[ 2018-07-25T00:07:28+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.453026s][吞吐率：2.21req/s] [内存消耗：1,762.60kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T00:07:32+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/index.php/admin/admin/list.html
+[ info ] localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/list.html [运行时间：0.311018s][吞吐率：3.22req/s] [内存消耗：3,793.44kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/edit/id/1.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Admin->list[ D:\wamp64\www\mythinkphp\TP520\blog\application\admin\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\mythinkphp\TP520\blog\public/../application/admin\view\admin\list.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=myblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sys_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_user` LIMIT 0,5 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T00:07:33+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.466026s][吞吐率：2.15req/s] [内存消耗：1,762.60kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T00:07:34+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/index.php/admin/admin/edit/id/3.html
+[ info ] localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/edit/id/3.html [运行时间：0.272015s][吞吐率：3.68req/s] [内存消耗：3,311.14kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/index.php/admin/admin/list.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ RUN ] app\admin\controller\Admin->edit[ D:\wamp64\www\mythinkphp\TP520\blog\application\admin\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\mythinkphp\TP520\blog\public/../application/admin\view\admin\edit.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=myblog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sys_user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `sys_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T00:07:35+08:00 ] 0.0.0.0 GET /mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0
+[ info ] localhost/mythinkphp/TP520/blog/public/static/admin/fonts/fontawesome-webfont.woff2?v=4.3.0 [运行时间：0.464027s][吞吐率：2.16req/s] [内存消耗：1,762.60kb] [文件加载：35]
+[ info ] [ LANG ] D:\wamp64\www\mythinkphp\TP520\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/mythinkphp/TP520/blog/public/static/admin/style/font-awesome.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'XDEBUG_SESSION=phpstorm',
+)
+[ info ] [ PARAM ] array (
+  'v' => '4.3.0',
+)
+[ info ] [ LOG ] INIT File

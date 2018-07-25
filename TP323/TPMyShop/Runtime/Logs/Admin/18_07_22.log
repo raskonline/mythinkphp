@@ -1,0 +1,8 @@
+[ 2018-07-22T11:52:09+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/Admin/Goods/listgoods?&pageIndex=-1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-20, 10' at line 1
+ [ SQL语句 ] : SELECT * FROM sw_goods ORDER BY goods_id DESC Limit -20, 10
+
+[ 2018-07-22T11:52:23+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/Admin/Goods/listgoods?&pageIndex=-1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-20, 10' at line 1
+ [ SQL语句 ] : SELECT * FROM sw_goods ORDER BY goods_id DESC Limit -20, 10
+

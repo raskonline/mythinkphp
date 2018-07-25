@@ -1,0 +1,12 @@
+[ 2018-07-20T19:53:29+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/admin/manager/%3C?php%20echo%20ADMIN_IMG_URL;?%3Eadmin.png
+ERR: 非法操作:
+
+[ 2018-07-20T19:53:29+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/admin/manager/%3C?php%20echo%20ADMIN_CSS_URL;?%3EUser_Login.css
+ERR: 非法操作:
+
+[ 2018-07-20T19:53:29+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/admin/manager/%3C?php%20echo%20ADMIN_IMG_URL;?%3Euser_botton.gif
+ERR: 非法操作:
+
+[ 2018-07-20T20:03:11+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/admin/manager/verifyimage
+ERR: 非法操作:verifyimage
+

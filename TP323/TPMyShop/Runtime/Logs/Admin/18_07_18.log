@@ -1,0 +1,4 @@
+[ 2018-07-18T22:23:16+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/Admin/Goods/listgoods
+ERR: 1146:Table 'shop.sw_sw_goods' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `sw_sw_goods`
+

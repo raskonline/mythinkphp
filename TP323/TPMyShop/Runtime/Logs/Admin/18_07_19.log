@@ -1,0 +1,3 @@
+[ 2018-07-19T22:21:12+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/Admin/Goods/addgoods
+ERR: Syntax Error in template "D:/wamp64/www/mythinkphp/TP323/TPMyShop/Admin/View\Goods\addgoods.html"  on line 22 "&lt;form action=&quot;{$smarty.__SELF__}&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;" $smarty.__SELF__ is invalid
+

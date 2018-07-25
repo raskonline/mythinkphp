@@ -1,0 +1,31 @@
+[ 2018-07-21T08:44:20+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/admin/manager/login
+ERR: Unable to load template file 'www\mythinkphp\TP323\ThinkPHP/Tpl/dispatch_jump.tpl'
+
+[ 2018-07-21T08:45:27+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/admin/manager/login
+ERR: Unable to load template file 'www\mythinkphp\TP323\ThinkPHP/Tpl/dispatch_jump.tpl'
+
+[ 2018-07-21T08:47:55+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/admin/manager/login
+ERR: Unable to load template file 'www\mythinkphp\TP323\ThinkPHP/Tpl/dispatch_jump.tpl'
+
+[ 2018-07-21T08:48:10+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/admin/manager/login
+ERR: Unable to load template file 'www\mythinkphp\TP323\ThinkPHP/Tpl/dispatch_jump.tpl'
+
+[ 2018-07-21T08:50:15+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/admin/index/incex.html
+ERR: 非法操作:incex
+
+[ 2018-07-21T14:44:05+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/admin/manager/login
+ERR: 1054:Unknown column 'admin' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `sw_manager` WHERE ( mg_name = admin and mg_pwd = 123456 ) LIMIT 1  
+
+[ 2018-07-21T15:11:33+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/Admin/Index/head
+ERR: Syntax Error in template "D:/wamp64/www/mythinkphp/TP323/TPMyShop/Admin/View\Index\head.html"  on line 17 "onclick=&quot;if (confirm('确定要退出吗？')) { window.location.href='{$smarty.const.__MODULE__}/manager/logout'; return true; } else {return false;}&quot;"  - Unexpected ";", expected one of: "}" , " "
+
+[ 2018-07-21T15:28:51+08:00 ] ::1 /mythinkphp/TP323/TPMyShop/index.php/Admin/Manager/index.php.html
+ERR: 非法操作:index.php
+
+[ 2018-07-21T15:43:25+08:00 ] 127.0.0.1 /mythinkphp/TP323/TPMyShop/index.php/Admin/manager/
+ERR: 非法操作:index
+
+[ 2018-07-21T15:43:28+08:00 ] 127.0.0.1 /mythinkphp/TP323/TPMyShop/index.php/Admin/manager/logn
+ERR: 非法操作:logn
+
